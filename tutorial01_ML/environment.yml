@@ -1,0 +1,8 @@
+name: lecture_tukorea_tutorial01
+channels:
+  - conda-forge
+dependencies: 
+  - python=3.14
+  - pandas=2.3.3
+  - scikit-learn
+  - prophet
