@@ -4,7 +4,17 @@ from prophet import Prophet
 from matplotlib import pyplot as plt    
 
 cur_dir = os.getcwd()
-data_file = os.path.join(cur_dir, 'tutorial01_ML', 'sales_data.csv')
+dir_name = os.path.basename(cur_dir)
+if dir_name == 'tutorial01_ML':
+    data_file = os.path.join(cur_dir, 'sales_data.csv') 
+elif dir_name.startswith('lecture-tukorea-20260109'):
+    data_file = os.path.join(cur_dir, 'tutorial01_ML', 'sales_data.csv')
+else: 
+    raise ValueError('Please run this script from the proper directory.')
+
+if data_file is None or not os.path.exists(data_file):
+    raise FileNotFoundError(f'Data file not found: {data_file}')
+
 df = pd.read_csv(data_file)
 
 df['Date'] = pd.to_datetime(df['Date'])
