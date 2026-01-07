@@ -1,0 +1,3 @@
+gymnasium[classic-control]==1.1.1
+gymnasium[other]==1.1.1
+matplotlib==3.10.8
