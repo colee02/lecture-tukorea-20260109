@@ -14,7 +14,7 @@ cd [실습 프로젝트 경로]/tutorial01_ML
 ### 윈도 PC에 실습 환경 준비
 ```bash 
 python -m venv venv_tutorial01
-venv_tutorial01\Scripts\activate 
+venv_tutorial01\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -35,7 +35,7 @@ cd [실습 프로젝트 경로]/tutorial02_DL
 ### 윈도 PC에 실습 환경 준비
 ```bash 
 python -m venv venv_tutorial02
-venv_tutorial02\Scripts\activate 
+venv_tutorial02\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -56,7 +56,7 @@ cd [실습 프로젝트 경로]/tutorial03_RL
 ### 윈도 PC에 실습 환경 준비
 ```bash 
 python -m venv venv_tutorial03
-venv_tutorial03\Scripts\activate 
+venv_tutorial03\Scripts\activate
 pip install -r requirements.txt
 ```
 
